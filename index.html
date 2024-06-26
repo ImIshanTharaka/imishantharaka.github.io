@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishan Tharaka</title>
+    <link rel="stylesheet" href="style_index.css" />
+    <script
+      src="https://kit.fontawesome.com/1d11c98a55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "LyuZUM_QVaC54B6ma",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- ---------------------------header---------------------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications and Courses</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello, It's Me</p>
+          <h1>
+            <span>Ishan Tharaka </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------about------------------------------ -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Ishan Tharaka, and I am a passionate and dedicated
+              professional with a strong background in Software Engineering. I
+              thrive on creativity and problem-solving, and I am constantly
+              seeking opportunities to expand my skills and knowledge. I pride
+              myself on my strong work ethic, enthusiasm, and a keen eye for
+              detail, which allow me to deliver high-quality results
+              consistently. My adaptability and quick learning skills enable me
+              to stay updated with the latest trends and technologies, ensuring
+              that my work remains cutting-edge and relevant. I am excited to
+              contribute to projects that challenge me and allow me to leverage
+              my strengths to achieve organizational goals. I believe in
+              continuous professional growth and strive to improve and innovate
+              in everything I do. I am eager to connect with like-minded
+              professionals and explore opportunities where I can make a
+              meaningful impact. Let's collaborate to create something amazing!
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Java, Python, SQL, JavaScript
+                </li>
+                <li><span>Frameworks</span><br />Springboot, Django</li>
+                <li>
+                  <span>Others</span><br />GCP, GIT, JIRA, SonarQube, Jenkins
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Engineer - Solutions</span><br />Axiata Digital Labs,
+                  Sri Lanka | 2023 - Present
+                </li>
+                <li>
+                  <span>Trainee - Systems & Solutions</span><br />Axiata Digital
+                  Labs, Sri Lanka | 2022-2023
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >BSc. [Hons] in Engineering, University of Moratuwa, Sri
+                    Lanka</span
+                  ><br />2017-2022
+                </li>
+                <li>
+                  <span>Pinnawala Central College, Kegalle, Sri Lanka</span
+                  ><br />2006-2015
+                </li>
+                <li>
+                  <span>St. Mary's College, Kegalle, Sri Lanka</span
+                  ><br />2002-2006
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------------------Certifications and Courses--------------------------------------------- -->
+
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title">Certifications and Courses</h1>
+        <div class="certifications-list">
+          <div class="certification">
+            <img
+              src="images/certificates/ProfessionalCloudArchitect20240620-7-2ihq7k.jpg"
+            />
+            <div class="layer-cer">
+              <h2>Google Cloud Certified Professional Cloud Architect</h2>
+              <p>Google</p>
+              <div class="project-links">
+                <a
+                  href="https://www.credly.com/badges/9b429076-ba77-43a6-b164-9e4b9dda3dd5/public_url"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="certification">
+            <img
+              src="images/certificates/Python_for_Beginners_E-Certificate.jpg"
+            />
+            <div class="layer-cer">
+              <h2>Python For Beginners</h2>
+              <p>
+                Department of Computer Science and Engineering, Faculty of
+                Engineering, University of Moratuwa
+              </p>
+              <!-- <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a> -->
+            </div>
+          </div>
+          <div class="certification">
+            <img
+              src="images/certificates/Web_Design_for_Beginners_E-Certificate.jpg"
+            />
+            <div class="layer-cer">
+              <h2>Web Design for Beginners</h2>
+              <p>
+                Department of Computer Science and Engineering, Faculty of
+                Engineering, University of Moratuwa
+              </p>
+              <!-- <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a> -->
+            </div>
+          </div>
+        </div>
+        <a href="certifications.html" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -----------------------------------------Projects--------------------------------------------- -->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+          <div class="project">
+            <img src="images/projects/social media.jpg" />
+            <div class="layer-pro">
+              <h2>Twitter-like Social Network Website</h2>
+              <p>
+                A Twitter-like social network website where users can log into
+                their accounts and publish posts. Users can follow/unfollow
+                other users. Users can see other users' posts and like/unlike
+                the posts.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ImIshanTharaka/Twitter-like-social-network-website"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/projects/e-commerce.png" />
+            <div class="layer-pro">
+              <h2>E-commerce Auction Site</h2>
+              <p>
+                An e-commerce auction site where users can log into their
+                accounts, post new auction listings, place bids on listings,
+                comment on listings, and add listings to their “watchlist”.
+                Users can close their listings and the highest bidder wins the
+                auction.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ImIshanTharaka/E-commerce-auction-site"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="https://youtu.be/blgrVC-ZX4o"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/projects/email app.jpg" />
+            <div class="layer-pro">
+              <h2>Email App</h2>
+              <p>
+                An email app where users can log into their accounts, send
+                emails to other users, receive emails from others, send replies
+                to received emails, and archive / unarchive emails.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ImIshanTharaka/Email-App"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a href="https://youtu.be/yCs3VzZO5BM"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ------------------------------------contact------------------------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ishan-tharaka"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/Ishantharaka5"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://github.com/ImIshanTharaka"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a href="images/Ishan-Tharaka-CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form action="" id="contact-form">
+              <input
+                type="text"
+                name="sender_name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="text"
+                name="sender_email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              <p id="contact-message"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 Ishan Tharaka. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(event, tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const contactForm = document.getElementById("contact-form"),
+        contactMessage = document.getElementById("contact-message");
+
+      const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+          .sendForm("service_xr26rvl", "template_g66qs4f", "#contact-form")
+          .then(
+            () => {
+              contactMessage.textContent = "Message sent successfully!";
+
+              setTimeout(() => {
+                contactMessage.textContent = "";
+              }, 5000);
+
+              contactForm.reset();
+            },
+            () => {
+              contactMessage.textContent = "Message not sent (Server error)";
+            }
+          );
+      };
+
+      contactForm.addEventListener("submit", sendEmail);
+    </script>
+  </body>
+</html>
