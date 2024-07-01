@@ -424,6 +424,11 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
   #header {
     background-image: url(images/hero-bg-mobile.png);
     z-index: 2;
@@ -447,14 +452,14 @@ nav .fa-solid {
 
   nav ul {
     background: #ff004f;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 1000;
     transition: 0.5s;
+    z-index: 2;
   }
 
   nav ul li {
@@ -491,14 +496,15 @@ nav .fa-solid {
   }
 
   .tab-links {
-    font-size: 16px;
+    font-size: 22px;
     margin-right: 20px;
     cursor: pointer;
     position: relative;
+    z-index: 1;
   }
 
   .layer-pro {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .contact-left,
@@ -508,5 +514,23 @@ nav .fa-solid {
 
   .copyright {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .layer-pro {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 870px) {
+  .layer-pro {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1270px) {
+  .layer-pro {
+    font-size: 11px;
   }
 }
